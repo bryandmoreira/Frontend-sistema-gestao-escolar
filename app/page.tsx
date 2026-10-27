@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Button from "@/components/Button";
 
 export default function Login() {
   return (
@@ -24,7 +25,7 @@ export default function Login() {
           <input type="text" placeholder="email@exemplo.com" />
           <p>Senha de Acesso</p>
           <input type="password" placeholder="****" />
-          <button type="submit">Entrar</button>
+          <Button variant="primary">Entrar</Button>
           
         </form>
         </div>
