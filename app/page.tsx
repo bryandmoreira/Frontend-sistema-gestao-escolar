@@ -1,9 +1,11 @@
 "use client";
 
+
 import styles from "./page.module.css";
 import { useState } from "react";
 import Button from "@/components/Button";
 
+import { login } from "./actions";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -26,26 +28,25 @@ export default function Login() {
 
 
 
-          <form className={styles.form}>
+          <form className={styles.form} action={login}>
+
             <p>Email de Acesso</p>
-            <input type="text" placeholder="email@exemplo.com" />
+            <input type="text" placeholder="email@exemplo.com" name="email" />
 
             <p>Senha de Acesso</p>
             <div className={styles.password}>
-              <input type={showPassword ? "text" : "password"} placeholder="****" />
+              <input type={showPassword ? "text" : "password"} placeholder="****" name="senha" />
 
               <input
                 type="checkbox"
                 className={styles.checkbox}
                 checked={showPassword}
                 onChange={() => setShowPassword(!showPassword)}
-                aria-label="Mostrar senha"
+
               />
             </div>
             <span>Minimo 8 caracteres</span>
-            <Button variant="primary">Entrar
-              <link href="/dashbord"/>
-            </Button>
+            <Button type="submit" variant="primary">Entrar</Button>
 
           </form>
         </div>

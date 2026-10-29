@@ -33,7 +33,6 @@
   align-items: center;
   gap: var(--spacing-lg);
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100L20 80M40 60L62 38M83 17L100 0' fill='none' stroke='%24000' stroke-width='.35' stroke-linecap='round'/%3E%3C/svg%3E"),
     linear-gradient(to bottom right, var(--color-background) 40%, var(--color-primary-soft) 60%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -48,6 +47,7 @@
   font-size: 20px;
   margin-top: 25px;
   color: var(--color-text);
+  font-family: var(--font-title);
 }
 
 .form {
@@ -61,6 +61,7 @@
 .form p {
   font-size: 17px;
   margin-bottom: -3px;
+  font-family: var(--font-caption);
 }
 
 .form input {

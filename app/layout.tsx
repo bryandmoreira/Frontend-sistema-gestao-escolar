@@ -1,15 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Source_Serif_4, Sofia_Sans, Spline_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+const sourceSerif4 = Source_Serif_4({
+  variable: "--font-source-serif-4",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sofiaSans = Sofia_Sans({
+  variable: "--font-sofia-sans",
   subsets: ["latin"],
+});
+
+const splineSans = Spline_Sans({
+  variable: "--font-spline-sans",
+  subsets: ["latin"],
+});
+
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +32,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${sourceSerif4.variable} 
+    ${spaceMono.variable} 
+    ${sofiaSans.variable} 
+    ${splineSans.variable}
+    ` }>
       <body>{children}</body>
     </html>
   );

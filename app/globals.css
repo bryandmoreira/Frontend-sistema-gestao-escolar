@@ -27,10 +27,10 @@
   /* Fontes */
   --font-title: var(--font-sofia-sans);
   --font-caption: var(--font-sofia-sans);
-  --font-subtitle: var(--source-serif-4);
-  --font-body: var(--spline-sans);
-  --font-description: var(--spline-sans);
-  --font-data: var(--space-mono)
+  --font-subtitle: var(--font-source-serif-4);
+  --font-body: var(--font-spline-sans);
+  --font-description: var(--font-spline-sans);
+  --font-data: var(--font-space-mono);
 
   /* Tamanhos de Textos*/
   --text-h1: 26px;
