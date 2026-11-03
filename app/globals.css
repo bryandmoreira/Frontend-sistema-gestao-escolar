@@ -67,4 +67,15 @@
   /* Breakpoints */
   --breakpoint-tablet: 640px;
   --breakpoint-desktop: 1024px; 
+
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
 }

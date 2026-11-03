@@ -1,0 +1,37 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  padding: var(--spacing-xl);
+}
+
+.toggleButton {
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--color-primary-strong);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.toggleButton:hover {
+  background-color: var(--color-primary-soft);
+}
+
+.toggleButton:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+  .shell {
+    flex-direction: column;
+  }
+}
