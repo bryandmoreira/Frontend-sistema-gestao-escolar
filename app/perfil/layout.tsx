@@ -15,21 +15,9 @@ export default function PerfilLayout({
     <div className={styles.shell}>
       <Sidebar
         isOpen={isSidebarOpen}
-        onToggle={() => setIsSidebarOpen(false)}
+        onToggle={() => setIsSidebarOpen((open) => !open)}
       />
       <main className={styles.content}>
-        {!isSidebarOpen && (
-          <button
-            className={styles.toggleButton}
-            type="button"
-            onClick={() => setIsSidebarOpen(true)}
-            aria-label="Exibir menu lateral"
-            aria-expanded={isSidebarOpen}
-            aria-controls="primary-sidebar"
-          >
-            Exibir menu
-          </button>
-        )}
         {children}
       </main>
     </div>

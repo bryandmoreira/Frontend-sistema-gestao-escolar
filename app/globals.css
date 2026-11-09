@@ -51,8 +51,9 @@
   --text-weight-data: 400;
 
   /* Espaçamentos */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
+  --spacing-2xs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 10px;
   --spacing-md: 12px;
   --spacing-lg: 16px;
   --spacing-xl: 24px;

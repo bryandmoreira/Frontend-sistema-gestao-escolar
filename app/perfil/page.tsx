@@ -7,6 +7,7 @@ export default function Perfil() {
  return (
     <div className={styles.page}>
       
+      
     </div>
  );
 };
