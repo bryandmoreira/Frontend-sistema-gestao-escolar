@@ -31,7 +31,7 @@ export default function Sidebar({ isOpen, onToggle }: SidebarProps) {
         <nav>
           <ul className={styles.list}>
             <li><a href="">Perfil</a></li>
-            <li><a href="">Alunos</a></li>
+            <li><a href="/alunos">Alunos</a></li>
             <li><a href="">Funcionários</a></li>
             <li><a href="">Matrículas</a></li>
             <li><a href="">Cursos</a></li>
