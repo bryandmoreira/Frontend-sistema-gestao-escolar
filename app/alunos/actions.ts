@@ -18,7 +18,7 @@ export async function getAlunosLista() {
         response = await fetch(`${process.env.API_URL}/alunos`, {
             method: 'GET',
             headers: {
-                Authorization: `Bearer ${token}`
+                Authorization: `Bearer ${token}`,
             },
             next: { tags: ["pegarListaAlunos"] }
         })
