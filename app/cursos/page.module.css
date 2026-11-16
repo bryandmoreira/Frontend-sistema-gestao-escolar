@@ -1,0 +1,27 @@
+.page {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: clamp(var(--spacing-lg), 4vw, var(--spacing-3xl));
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+.header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header h1 {
+  margin: 0;
+  color: var(--color-primary-strong);
+  font-family: var(--font-title);
+  font-size: var(--text-h1);
+}
+
+.header p {
+  margin: var(--spacing-xs) 0 0;
+  color: var(--color-text-muted);
+}

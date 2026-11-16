@@ -1,37 +1,19 @@
 import { getAlunosLista } from "./actions";
+import AlunosLista from "./AlunosLista";
 import styles from "./page.module.css";
 
+export const instant = false;
+
 export default async function Alunos() {
-    const alunos = await getAlunosLista();
-    console.log(alunos);
+  const alunos = await getAlunosLista();
 
-    return (
-        <div className={styles.page}>
-            <h1>Lista de alunos</h1>
-
-            <div className={styles.tabela}>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Cargo</th>
-                            <th>Cidade</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Ana Silva</td>
-                            <td>Desenvolvedora</td>
-                            <td>Curitiba</td>
-                        </tr>
-                        <tr>
-                            <td>Carlos Souza</td>
-                            <td>Designer</td>
-                            <td>São Paulo</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    );
+  return (
+    <section className={styles.page}>
+      <header className={styles.header}>
+        <h1>Alunos</h1>
+        <p>Consulte e edite os dados cadastrais dos alunos.</p>
+      </header>
+      <AlunosLista alunos={alunos} />
+    </section>
+  );
 }

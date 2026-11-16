@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Sidebar.module.css";
 
 type SidebarProps = {
@@ -30,11 +31,15 @@ export default function Sidebar({ isOpen, onToggle }: SidebarProps) {
         <h2 className={styles.title}>Menu</h2>
         <nav>
           <ul className={styles.list}>
-            <li><a href="">Perfil</a></li>
-            <li><a href="/alunos">Alunos</a></li>
-            <li><a href="">Funcionários</a></li>
-            <li><a href="">Matrículas</a></li>
-            <li><a href="">Cursos</a></li>
+            <li><Link href="/perfil">Perfil</Link></li>
+            <li><Link href="/alunos">Alunos</Link></li>
+            <li><Link href="/funcionarios">Funcionários</Link></li>
+            <li>
+              <span className={styles.disabledLink} aria-disabled="true">
+                Matrículas
+              </span>
+            </li>
+            <li><Link href="/cursos">Cursos</Link></li>
           </ul>
         </nav>
       </div>
